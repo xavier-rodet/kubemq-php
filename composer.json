@@ -1,0 +1,25 @@
+{
+    "name": "snailweb/kubemq",
+    "license": "MIT",
+    "description": "PHP Client for KubeMQ",
+    "type": "library",
+    "require": {},
+    "authors": [
+        {
+            "name": "Xavier RODET",
+            "email": "xavier.rodet@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "platform": {
+            "php": "7.1",
+            "ext-curl": "7.3"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Snailweb\\KubeMQ\\": "src/"
+        }
+    }
+}
