@@ -95,12 +95,12 @@ class Queue implements QueueInterface
             CURLOPT_HTTPHEADER => array("Content-Type: application/json"),
         ));
 
-        $response = json_decode(curl_exec($curl));
+        $response = curl_exec($curl);
         $error = curl_error($curl);
         curl_close($curl);
 
         if($error) throw new \Exception($error);
 
-        return $response;
+        return json_decode($response);
     }
 }
